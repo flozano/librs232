@@ -187,7 +187,7 @@ function Port:open()
   if not ok then
     self._p:close()
 	self._p = nil
-    return nil, err
+    return nil, ret
   end
 
   return self, tostring(self._p)
